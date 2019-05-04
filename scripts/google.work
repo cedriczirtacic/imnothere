@@ -1,0 +1,11 @@
+from random import randrange
+from time import sleep
+
+d = open('scripts/smalldict.txt','r').read().splitlines()
+s = driver.find_element_by_class_name('gLFyf')
+s.send_keys( d[randrange(len(d))] + Keys.RETURN)
+
+l = driver.find_element_by_class_name('srg');
+a = l.find_elements_by_tag_name('a')
+
+a[randrange(len(a)-1)].click()

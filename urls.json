@@ -1,0 +1,25 @@
+{
+    "interval": 20,
+    "arguments": [
+        "--incognito"
+    ],
+    "headless": false,
+    "urls": [
+        {
+            "url": "https://www.duckduckgo.com/",
+            "standby": "8",
+            "action": "work:./scripts/duck.work"
+        },
+        {
+            "url": "https://www.google.com/",
+            "standby": "~10",
+            "action": "js:./scripts/google.js"
+        },
+        {
+            "url": "https://www.boingboing.net/",
+            "standby": "180",
+            "once": true
+        }
+ 
+    ]
+}

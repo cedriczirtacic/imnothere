@@ -1,0 +1,12 @@
+from random import randrange
+from time import sleep
+
+d = open('scripts/smalldict.txt','r').read().splitlines()
+s = driver.find_element_by_id('search_form_input_homepage')
+s.send_keys( d[randrange(len(d))] + Keys.RETURN)
+sleep(1)
+
+l = driver.find_elements_by_class_name('result__url')
+if len(l)>1:
+    l[randrange(len(l))-1].click()
+
