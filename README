@@ -3,4 +3,8 @@ imnothere
 
 Generate network white noise for when you don't need it but you need it.
 
+Needed:
+    * Selenium: pip install --user selenium
+    * Google Chrome, of course.
+
 note: tested only on macOS but should have no issues on Linux.
